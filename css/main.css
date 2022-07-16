@@ -253,6 +253,7 @@ textarea {
   h3 {
     orphans: 3;
     widows: 3;
+    color: blue;
   }
 
   h2,
@@ -260,4 +261,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
