@@ -19,9 +19,12 @@ h3 {
   padding-left: 10px;
   top: 0;
   text-align: left;
-  display: inline;
   color: #000;
   font-weight: thin;
+}
+p {
+  display: block;
+  padding-left: 10px;
 }
 
 .background {
