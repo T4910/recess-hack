@@ -4,7 +4,7 @@ Essentially Valdivian brings how-to-videos that makes it easier for you to searc
 
 To run the program, you first have to install the latest version of python, run pip install -r requirements.txt, then run python app.py
 
-##To run:
+## To run:
 `
 cd 'flask app'
 pip install -r requirements.txt
