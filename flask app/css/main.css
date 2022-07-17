@@ -260,13 +260,4 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
-
-  .nav_item {
-    width: 10px;
-    height: 10px;
-    padding: 10px;
-    display: block;
-    background-color: green;
-    margin: 10px;
-  }
 }

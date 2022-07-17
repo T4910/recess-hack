@@ -82,3 +82,14 @@ body {
 .css-button-gradient--4:active {
   top: 2px;
 }
+
+.register {
+  text-align: center;
+  margin: auto;
+  display: block;
+  padding-top: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  width: 100px;
+}
