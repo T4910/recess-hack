@@ -24,11 +24,25 @@ def login_required(f):
     return decorated_function
 
 
+card_info = [
+    {'title': 'VS code in 100 seconds', 'age': '15', 'level':'Beginners', 'links': 'https://www.youtube.com/embed/KMxo3T_MTvY'},
+    {'title': 'Learn HTML in 12 Minutes', 'age': '15', 'level':'Beginners', 'links': ''},
+    {'title': 'Learn More HTML in 12 Minutes', 'age': '15', 'level':'Beginners', 'links': ''},
+    {'title': 'Learn CSS in 12 Minutes', 'age': '15', 'level':'Beginners', 'links': ''},
+    {'title': 'Learn Javascript in 12 minutes', 'age': '15', 'level':'Beginners', 'links': ''},
+    {'title': 'Learn JSON in 10 minutes', 'age': '15', 'level':'Beginners', 'links': ''},
+    {'title': 'Build a React App Fast!', 'age': '15', 'level':'Beginners', 'links': ''},
+    {'title': 'React Tutorial', 'age': '15', 'level':'Beginners', 'links': ''},
+    {'title': 'Sass in 100 seconds', 'age': '15', 'level':'Advanced', 'links': ''}
+]
+
+
 
 @app.route("/")
 @login_required
 def index():
-    return render_template("mainpage.html")
+
+    return render_template("mainpage.html", cards=card_info)
 
 @app.route("/logout")
 @login_required
@@ -68,10 +82,12 @@ def login():
         if not password:
             return 'Please input password'
 
-        if name != 'go':
-            return render_template('login.html')
-        elif password != 'ans':
-            return render_template('login.html')
+        
+    
+        if name != 'valdivian@recesshacks':
+            return render_template('login.html', user=[name, password])
+        elif password != 'adminstrator':
+            return render_template('login.html', user=[name, password])
             
             
         # Remember which user has logged in
@@ -94,10 +110,17 @@ def profile():
     else:
         return render_template('profile.html')
 
+
+@app.route("/tutorial", methods=['GET', 'POST'])
+@login_required
+def tutorial():
+    return render_template('tutorial.html')
+
+
+
 @app.errorhandler(404)
 def notfound(e):
     return render_template("404.html")
-
 
 
 if __name__ == '__main__':

@@ -1,0 +1,33 @@
+body {
+  background: #005e6f;
+  font-family: "Roboto", sans-serif;
+  background-size: cover;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.youtube-video {
+  margin: 0 auto;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+
+  width: 900px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  margin-left: 500px;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.video-content {
+  width: 650px;
+  margin-left: 130px;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}

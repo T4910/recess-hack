@@ -24,6 +24,7 @@
               name="username"
               id="username"
               placeholder="Username"
+              value="{% if user %} {{user[0]}} {% endif %}"
             />
           </div>
           <div class="login-password">
@@ -33,6 +34,7 @@
               name="password"
               id="password"
               placeholder="Password"
+              value="{% if user %} {{user[1]}} {% endif %}"
             />
           </div>
           <button class="css-button-gradient--4" type="submit">Login</button>
