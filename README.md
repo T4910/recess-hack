@@ -8,3 +8,7 @@ To run the program, you first have to install the latest version of python, run 
 `cd 'flask app'`
 `pip install -r requirements.txt`
 `python app.py`
+
+## valdivian account
+username: valdivian@recesshacks;
+password: adminstrator;
